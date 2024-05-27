@@ -6,4 +6,7 @@ export class View {
         const template = this.template(model);
         this.elemento.innerHTML = template;
     }
+    dateFormat(data) {
+        return new Intl.DateTimeFormat().format(data);
+    }
 }
